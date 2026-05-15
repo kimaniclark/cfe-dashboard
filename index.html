@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
     <title>CFE Portfolio Dashboard</title>
     <style>
         * {
@@ -256,8 +253,14 @@
             <h1>🏆 CFE Portfolio</h1>
             <div class="subtitle">Consulting for Equity — Crown Acquisitions</div>
         </div>
-        <div style="text-align: right; color: #71717a; font-size: 13px;">
-            Last updated: May 15, 2026 @ 4:00 AM - KB2 PAYMENT READY
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <div class="dashboard-toggle" style="background: rgba(255, 255, 255, 0.1); border-radius: 12px; padding: 4px;">
+                <button class="toggle-btn" onclick="window.location.href='acquisition-dashboard-mockup.html'" style="padding: 8px 16px; border-radius: 8px; background: none; border: none; color: #a1a1aa; font-size: 14px; cursor: pointer;">Acquisitions</button>
+                <button class="toggle-btn active" style="padding: 8px 16px; border-radius: 8px; background: rgba(74, 222, 128, 0.2); border: none; color: #4ade80; font-size: 14px; cursor: pointer;">CFE Deals</button>
+            </div>
+            <div style="text-align: right; color: #71717a; font-size: 13px;">
+                Last updated: May 15, 2026 @ 5:00 AM - SYNCED WITH LATEST - 3:36 AM
+            </div>
         </div>
     </div>
     
@@ -280,7 +283,7 @@
         </div>
         <div class="summary-card">
             <div class="label">Pipeline Deals</div>
-            <div class="value amber">9</div>
+            <div class="value amber">8</div>
             <div class="subtext">In negotiation</div>
         </div>
     </div>
@@ -369,6 +372,42 @@
     <div class="pipeline-section">
         <div class="section-title">Pipeline</div>
         
+        <div class="pipeline-item" style="border-color: rgba(74, 222, 128, 0.3);">
+            <div class="pipeline-info">
+                <div class="pipeline-name">Karios / NEV Engagement</div>
+                <div class="pipeline-detail">Chris Cresswell • New Enterprise Ventures • Healthcare advisory</div>
+            </div>
+            <span class="deal-status status-negotiating" style="margin-right: 20px; background: rgba(74, 222, 128, 0.2); color: #4ade80;">Proposal Sent</span>
+            <div class="pipeline-potential">
+                <div class="label">Your 10%</div>
+                <div class="value" style="color: #4ade80;">$22,500+</div>
+            </div>
+        </div>
+        
+        <div class="pipeline-item" style="border-color: rgba(34, 197, 94, 0.3);">
+            <div class="pipeline-info">
+                <div class="pipeline-name">IBO Advisors Partnership - ACTIVE DEVELOPMENT</div>
+                <div class="pipeline-detail">Michael Chasen • Blackboard founder ($1.64B exit) • Independent Buyout (ESOP) deals • Pitch deck received</div>
+            </div>
+            <span class="deal-status status-active" style="margin-right: 20px; background: rgba(34, 197, 94, 0.2); color: #22c55e;">Deck Analysis Complete</span>
+            <div class="pipeline-potential">
+                <div class="label">54% Better</div>
+                <div class="value" style="color: #22c55e;">Than PE</div>
+            </div>
+        </div>
+
+        <div class="pipeline-item">
+            <div class="pipeline-info">
+                <div class="pipeline-name">Karios Sales Commission</div>
+                <div class="pipeline-detail">Sree • 15% of Karios product sales • Agreement pending</div>
+            </div>
+            <span class="deal-status status-pipeline" style="margin-right: 20px;">Agreement Pending</span>
+            <div class="pipeline-potential">
+                <div class="label">Your Cut</div>
+                <div class="value">15% of sales</div>
+            </div>
+        </div>
+        
         <div class="pipeline-item">
             <div class="pipeline-info">
                 <div class="pipeline-name">Plesh Electric</div>
@@ -405,15 +444,15 @@
             </div>
         </div>
         
-        <div class="pipeline-item">
+        <div class="pipeline-item" style="border-color: rgba(251, 191, 36, 0.3);">
             <div class="pipeline-info">
-                <div class="pipeline-name">AT Protective Services</div>
-                <div class="pipeline-detail">Sebastian Vincenzo + Partner</div>
+                <div class="pipeline-name">ATPS Security</div>
+                <div class="pipeline-detail">Andrew Tauber & Sebastian Vincenzo • $6M revenue • 330 employees • w/ Dolores Hirschmann</div>
             </div>
-            <span class="deal-status status-pipeline" style="margin-right: 20px;">Meeting TBD</span>
+            <span class="deal-status status-pipeline" style="margin-right: 20px; background: rgba(251, 191, 36, 0.2); color: #fbbf24;">Payment Plan Call Sun</span>
             <div class="pipeline-potential">
-                <div class="label">Potential</div>
-                <div class="value">TBD</div>
+                <div class="label">Issue</div>
+                <div class="value">Upfront Cash</div>
             </div>
         </div>
         
@@ -429,51 +468,51 @@
             </div>
         </div>
         
-        <div class="pipeline-item">
+        <div class="pipeline-item" style="border-color: rgba(74, 222, 128, 0.3);">
             <div class="pipeline-info">
-                <div class="pipeline-name">Myoncare JV</div>
-                <div class="pipeline-detail">Healthcare Tech • SPV owns infrastructure, licenses to MSO</div>
+                <div class="pipeline-name">Eazy Clients - AI Law Firm Automation</div>
+                <div class="pipeline-detail">Keaton Nelson & Nick Gant • AI automation for law firms</div>
             </div>
-            <span class="deal-status status-pipeline" style="margin-right: 20px;">NDA Pending</span>
+            <span class="deal-status status-negotiating" style="margin-right: 20px; background: rgba(74, 222, 128, 0.2); color: #4ade80;">Intro Call</span>
+            <div class="pipeline-potential">
+                <div class="label">Market</div>
+                <div class="value">Law Firm AI</div>
+            </div>
+        </div>
+        
+        <div class="pipeline-item" style="border-color: rgba(74, 222, 128, 0.3);">
+            <div class="pipeline-info">
+                <div class="pipeline-name">Business Design Corp</div>
+                <div class="pipeline-detail">Mike Mills • TouchStone Business System • SOP organization</div>
+            </div>
+            <span class="deal-status status-negotiating" style="margin-right: 20px; background: rgba(74, 222, 128, 0.2); color: #4ade80;">Call Requested</span>
+            <div class="pipeline-potential">
+                <div class="label">Exit Value</div>
+                <div class="value">$4-6M</div>
+            </div>
+        </div>
+        
+        <div class="pipeline-item" style="border-color: rgba(96, 165, 250, 0.3);">
+            <div class="pipeline-info">
+                <div class="pipeline-name">Rejuvenation Clinic Med Spa</div>
+                <div class="pipeline-detail">Chris Spillman • Vienna/Tysons Corner, VA • Founder transition</div>
+            </div>
+            <span class="deal-status status-signed" style="margin-right: 20px; background: rgba(96, 165, 250, 0.2); color: #60a5fa;">CFE Call Mon</span>
             <div class="pipeline-potential">
                 <div class="label">Structure</div>
-                <div class="value">JV equity + ongoing licensing</div>
+                <div class="value">6mo + Acquire</div>
             </div>
         </div>
         
         <div class="pipeline-item">
             <div class="pipeline-info">
-                <div class="pipeline-name">Flagship Patents</div>
-                <div class="pipeline-detail">Patent Referrals • Agreement in review</div>
+                <div class="pipeline-name">Capital Cyber</div>
+                <div class="pipeline-detail">Rick Dassler • Barter Saves lead • Exit candidate</div>
             </div>
-            <span class="deal-status status-negotiating" style="margin-right: 20px;">Contract Review</span>
+            <span class="deal-status status-pipeline" style="margin-right: 20px;">Lead</span>
             <div class="pipeline-potential">
-                <div class="label">Terms</div>
-                <div class="value">10% of referred sales</div>
-            </div>
-        </div>
-        
-        <div class="pipeline-item">
-            <div class="pipeline-info">
-                <div class="pipeline-name">Karios / NEV Engagement</div>
-                <div class="pipeline-detail">Karios.ai • Connecting to Chris Cresswell (New Enterprise Ventures)</div>
-            </div>
-            <span class="deal-status status-pipeline" style="margin-right: 20px;">Early Stage</span>
-            <div class="pipeline-potential">
-                <div class="label">Terms</div>
-                <div class="value">TBD</div>
-            </div>
-        </div>
-        
-        <div class="pipeline-item">
-            <div class="pipeline-info">
-                <div class="pipeline-name">NEV Stock (Patent Work)</div>
-                <div class="pipeline-detail">Chris Cresswell • Stock in exchange for patent work • Crown Acquisitions owns</div>
-            </div>
-            <span class="deal-status status-negotiating" style="margin-right: 20px;">Agreement Pending</span>
-            <div class="pipeline-potential">
-                <div class="label">Type</div>
-                <div class="value">Equity stake</div>
+                <div class="label">Revenue</div>
+                <div class="value">$17K/mo</div>
             </div>
         </div>
     </div>
@@ -484,4 +523,3 @@
     </div>
 </body>
 </html>
-<!-- Force deployment Fri May 15 04:00:42 EDT 2026 -->
